@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Estilo base para layout con width y height en match_parent  -->
+    <style name="matchParentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--  Estilo base para layout con width y height en wrap_content  -->
+    <style name="wrapContentLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--  Estilo base para layout con width match_parent y height wrap_content  -->
+    <style name="matchWrapLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--  Estilo para los layouts usados en la guia  -->
+    <style name="genericStyleLayout" parent="matchParentLayout">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <!--  Estilo para el layout welcome  -->
+    <style name="welcomeLayoutStyle" parent="genericStyleLayout">
+        <item name="android:background">@color/purpleTransparent</item>
+    </style>
+    <!--  Estilo para el layout guide  -->
+    <style name="guideLayoutStyle" parent="genericStyleLayout">
+        <item name="android:background">@drawable/layout_gradient</item>
+    </style>
+    <!--  Estilo para el espacio vacío  -->
+    <style name="spaceStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <!--  Estilo común a los textos  -->
+    <style name="commonTextStyles" parent="matchWrapLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+    <!--  Estilo para los titulos de bienvenida  -->
+    <style name="largeWelcomeTextStyles" parent="commonTextStyles">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>    
+    <!--  Estilo para los textos de bienvenida  -->
+    <style name="welcomeMessagesStyle" parent="commonTextStyles">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  Estilo para los textos de la guia    -->
+    <style name="guideTextStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/purpleComplementary</item>
+    </style>
+    <!--  Estilo para el boton de saltar guia  -->
+    <style name="closeGuideButtonStyle" parent="wrapContentLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:text">@string/skipGuide</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+</resources>

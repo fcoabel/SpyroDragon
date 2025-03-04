@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/guideLayoutStyle"
+    android:visibility="gone">
+
+    <Button
+        android:id="@+id/closeGuideButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        style="@style/closeGuideButtonStyle" />
+
+    <TextView
+        android:id="@+id/guideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/characterTabExplanation"
+        style="@style/guideTextStyle"/>
+
+    <ImageView
+        android:id="@+id/speachBubble"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-21dp"
+        android:background="@drawable/speach_bubble" />
+
+    <ImageView
+        android:id="@+id/aboutGuideView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-20dp"
+        android:background="@drawable/flecha"
+        android:visibility="gone" />
+
+</RelativeLayout>

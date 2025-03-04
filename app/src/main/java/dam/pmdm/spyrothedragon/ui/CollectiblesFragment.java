@@ -16,6 +16,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import dam.pmdm.spyrothedragon.R;
 import dam.pmdm.spyrothedragon.adapters.CollectiblesAdapter;
@@ -28,6 +29,8 @@ public class CollectiblesFragment extends Fragment {
     private RecyclerView recyclerView;
     private CollectiblesAdapter adapter;
     private List<Collectible> collectiblesList;
+    private boolean easterEgg = false;
+    private int countClick = 0;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,11 +39,28 @@ public class CollectiblesFragment extends Fragment {
         recyclerView = binding.recyclerViewCollectibles;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         collectiblesList = new ArrayList<>();
-        adapter = new CollectiblesAdapter(collectiblesList);
+        adapter = new CollectiblesAdapter(collectiblesList, this::onItemClicked);
         recyclerView.setAdapter(adapter);
 
         loadCollectibles();
         return binding.getRoot();
+    }
+
+    private void onItemClicked(Collectible collectible) {
+        if (!easterEgg) showEasterEgg(collectible);
+    }
+
+    private void showEasterEgg (Collectible collectible){
+        countClick++;
+        if (!Objects.equals(collectible.getName(), "Gemas")) return;
+        if (countClick != 4) return;
+        binding.videoView.setVisibility(View.VISIBLE);
+        binding.videoView.setVideoPath("android.resource://" + getActivity().getPackageName() + "/" + R.raw.trailer);
+        binding.videoView.start();
+        binding.videoView.setOnCompletionListener(mp -> {
+            binding.videoView.setVisibility(View.GONE);
+            easterEgg = true;
+        });
     }
 
     @Override

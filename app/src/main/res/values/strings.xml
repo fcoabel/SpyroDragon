@@ -6,4 +6,11 @@
     <string name="title_about">Acerca de</string>
     <string name="text_about">Aplicación desarrollada por \n <b>Fco Abel Pelegrín Mañas</b></string>
     <string name="accept">Aceptar</string>
+    <string name="welcomeMessage">Bienvenido a la experiencia</string>
+    <string name="welcomeText">¡Hola! Me alegra que hayas decidido unirte a nosotros en esta emocionante aventura inspirada en el mundo de Spyro the Dragon. En esta aplicación, te sumergirás en un universo lleno de magia, dragones y aventuras inolvidables.</string>
+    <string name="welcomeDescription">Nuestra aplicación está diseñada para que te sientas como si estuvieras explorando los reinos de Spyro, desde el corazón de los Dragones hasta las profundidades de los océanos. Aquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y montones de tesoros brillantes.</string>
+    <string name="skipGuide">Saltar guía</string>
+    <string name="characterTabExplanation">Aquí podrás explorar a todos los personajes del mundo de Spyro.</string>
+    <string name="worldsTabExplanation">Aquí encontrarás a todos los mundos de Spyro.</string>
+    <string name="collectiblesTabExplanation">Aquí podrás descubrir todos los coleccionables del mundo de Spyro.</string>
 </resources>

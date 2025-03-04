@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/welcomeLayout"
+    style="@style/welcomeLayoutStyle"
+    android:visibility="gone">
+
+
+    <TextView
+        style="@style/largeWelcomeTextStyles"
+        android:text="@string/welcomeMessage" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/spyro_text"/>
+
+    <TextView
+        style="@style/welcomeMessagesStyle"
+        android:text="@string/welcomeText"/>
+
+    <Space
+        style="@style/spaceStyle"/>
+
+    <TextView
+        style="@style/welcomeMessagesStyle"
+        android:text="@string/welcomeDescription"/>
+
+    <Space
+        style="@style/spaceStyle"/>
+
+    <Button
+        android:id="@+id/buttonBegin"
+        android:layout_gravity="center"
+        android:text="@string/accept"
+        android:layout_width="120dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

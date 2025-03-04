@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="pink">#c55e97</color>
+    <color name="green2">#5dc58b</color>
     <color name="purple">#9c35ba</color>
+    <color name="purpleComplementary">#52ba35</color>
+    <color name="purpleTransparent">#D69C35BA</color>
     <color name="orange">#e7a56e</color>
+    <color name="orangeComplementary">#6eafe7</color>
     <color name="yellow">#fbdf6a</color>
+    <color name="yellowComplementary">#6985fb</color>
     <color name="yellow2">#88ffffff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
